@@ -15,6 +15,10 @@ function App() {
       <Skills />
       <Work />
       <Contact />
+      <div className="bg-[#20242d] text-center">
+        <span className="text-teal-600 font-bold">Made with ❤️ by Vivek</span>
+      </div>
+      
     </div>
   );
 }

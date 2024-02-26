@@ -18,18 +18,19 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="fixed w-full h-[80x] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
-      <div>
+    <div className="fixed w-full h-[80x] flex justify-between items-center px-4 bg-[#20242d] text-gray-300">
+      {/* <div>
         <img src={Logo} alt="Logon Image" style={{ width: "50px" }} />
-      </div>
+      </div> */}
+      <h1 className="font-bold text-4xl">VW</h1>
 
       {/* menu */}
       <ul className="hidden md:flex">
-        <li><Link to="home" smooth={true} duration={500}>Home</Link></li>
-        <li><Link to="about" smooth={true} duration={500}>About</Link></li>
-        <li><Link to="skills" smooth={true} duration={500}>Skills</Link></li>
-        <li><Link to="work" smooth={true} duration={500}>Work</Link></li>
-        <li><Link to="contact" smooth={true} duration={500}>Contact</Link></li>
+        <li className="hover:text-teal-600"><Link to="home" smooth={true} duration={500}>Home</Link></li>
+        <li className="hover:text-teal-600"><Link to="about" smooth={true} duration={500}>About</Link></li>
+        <li className="hover:text-teal-600"><Link to="skills" smooth={true} duration={500}>Skills</Link></li>
+        <li className="hover:text-teal-600"><Link to="work" smooth={true} duration={500}>Work</Link></li>
+        <li className="hover:text-teal-600"><Link to="contact" smooth={true} duration={500}>Contact</Link></li>
       </ul>
 
       {/* Hamburger */}
